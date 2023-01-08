@@ -1,0 +1,367 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap'); 
+html{
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+      justify-content: center;
+      display: flex;
+     
+}
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: 0.75rem;
+}
+body{
+    background-color: #1a2a33; 
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
+    overflow: hidden;
+}
+
+
+/* First page */
+
+.intro_xo {
+padding-top: 5rem;
+  margin-bottom: -5rem;
+  display: flex;
+
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.choose_xo{
+  background-color: #1F3641;
+padding: 1.3rem;
+    margin-top: 6.7rem;
+    margin-bottom: 1rem;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: inset 0px -7px 0px #00000049;
+}
+.choose_xo h1{
+font-size: 1em;
+letter-spacing: 1px;
+color: #A8BFC9;
+}
+.choose_xo p{
+  font-size: 17px;
+  color: #a8bfc99f;
+}
+
+.x_or_o{
+justify-content: space-around;
+  display: flex;
+  background-color: #1a2a33; 
+margin: 1rem  0;
+padding: 0.5rem;
+
+}
+
+.x_or_o img{
+width: 1.9rem;
+ filter:brightness(1000%) opacity(60%);
+border: none;
+ }
+ .x_or_o div{
+  width: 6.5rem;
+
+border-radius: 0.6rem;
+cursor: pointer;
+padding: 0.3rem ;
+ }
+
+.marked_xo {
+   background: #A8BFC9; 
+ }
+ .marked_xo img{
+  filter:brightness(10%) ;
+
+ }
+
+
+ .game_button button {
+  justify-content: center;
+margin: 0.4rem 0;
+width: 100%;
+height: 2.8rem;
+
+border: none;
+font-size: 0.8em;
+font-weight: bold;
+
+cursor: pointer;
+ }
+.computer, .yes_rest, .next_round  {
+  background: #F2B137;
+  box-shadow: inset 0px -7px 0px #CC8B13;
+}
+.friendly{
+  background: #31C3BD;
+  box-shadow: inset 0px -7px 0px #118C87;
+}
+
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-inline: 0.2rem;
+}
+
+.xo_logo img{
+position: absolute;
+
+ margin-top: 0.25rem;
+}
+
+
+.whose_turn{
+  width: 5rem;
+  height: 2rem;
+ 
+  margin-left: 2rem;
+  background-color: #1F3641;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  box-shadow:  0px 0.2rem 0px #1a2e38e4;
+  border-radius: 0.5rem;
+  color: #b9c6cc;
+  font-size: 15px;
+
+} 
+.whose_turn img{
+  width: 1rem;
+padding: 0.3rem;
+} 
+
+
+
+.no_quit, .quit {
+  background-color: rgb(177, 218, 224);
+  box-shadow: inset 0px -7px 0px #7b80835f;
+  cursor: pointer;
+}
+
+
+.place_holder {
+
+    background-color: #1F3641;
+    width:4.4rem;
+    height:3.8em;
+    margin: 0 0.5rem  1rem 0.5rem;
+    border-radius: 10px;
+box-shadow: 0px 8px #10212A;
+
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid;
+  border: none;
+
+}
+
+.place_holder img {
+ position: absolute;
+    width: 2.2rem;
+    height: 2.2rem;
+border: none;
+
+}
+
+
+.scores{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.4rem;
+  margin-inline: 0.22rem;
+}
+.scores div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 4.5rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+}
+.scores span{
+  font-size: 15px;
+}
+.score_x {
+  background-color: #31C3BD;
+}
+.score_o {
+background-color: #F2B137;
+}
+.ties {
+  background-color: #A8BFC9;
+}
+
+
+
+
+.who_wins, .restart_pop{
+  position: absolute;
+  
+  width: 100%;
+  top: 9.4rem;
+left: 0;
+ background: #1F3641;
+  text-align: center;
+padding: 1.6rem 0; 
+
+border-radius: 0;
+}
+
+.who_wins h2{
+  color: #A8BFC9;
+  font-size: 1em;
+  margin-bottom: 1rem;
+}
+.who_wins h1{
+  color: #31C3BD;
+  font-size: 1.3rem;
+
+}
+.who_wins img{
+  width: 1.8rem;
+  margin-bottom: -8px;
+}
+.who_wins button{
+  border: none;
+  border-radius: 0.5rem;
+  height: 2.5rem;
+margin: 1rem 0.2rem;
+
+}
+.quit{
+width: 3.5rem;
+}
+.next_round{
+width: 7rem;
+}
+.game_tied {
+  color: #b6c1c6c9;
+}
+
+.restart {
+  width: 2rem;
+  height: 1.8rem;
+    display: flex;
+  background-color: #b9c6cc;
+  box-shadow: 0px 0.2rem 0px #7f8689;
+  border-radius: 0.5rem;
+cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.restart :hover{
+  background-color: #999c9d;
+}
+.restart_pop{
+ color: rgba(214, 204, 204, 0.841);
+ display: none;
+ height: 8rem;
+}
+.restart_pop button{
+border: none;
+  border-radius: 0.6rem;
+height: 2.5rem;
+width: 7rem;
+margin: 2rem 0.2rem 0 0.2rem;
+
+font-weight: bold;
+}
+
+.cover1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+ top: 0;
+ left: 0;
+}
+
+
+
+
+
+@media screen and (min-width: 600px) {
+ 
+  html{
+    justify-content: center;
+    display: flex;
+   }
+main {
+width: 21rem;
+}
+.lobby {
+width: 25rem;
+}
+
+.header, .scores{
+margin-inline: 0.5rem;
+margin-top: 4rem;
+}
+.scores {
+  margin-top: 1.5rem;
+}
+
+.xo_logo img{
+ 
+  width: 4rem;
+  }
+  
+  
+  .whose_turn{
+    width: 5rem;
+    height: 2.5rem;
+   
+    margin-left: 2rem;
+
+  
+  } 
+  .whose_turn img{
+    width: 1.3rem;
+  padding: 0.4rem;
+
+  } 
+
+.place_holder {
+  width: 6rem;
+  height: 5rem;
+}
+.place_holder img{
+  width: 3rem;
+  height: 3rem;
+}
+
+
+.who_wins h2{
+  font-size: 1.5em;
+}
+.who_wins h1{
+  font-size: 1.8rem;
+}
+.who_wins button{
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+}
+.quit{
+width: 4.3rem;
+}
+}
+

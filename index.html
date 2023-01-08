@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic tac toe</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer ></script>
+
+</head>
+<body>
+
+
+<div class="lobby">
+
+  <div class = 'xo intro_xo'>
+    <img  src="./assets/logo.svg" alt="X Icon">
+  </div>
+
+<div class="choose_xo">
+      <h1>Pick player 1's mark</h1>
+      <div class = 'x_or_o'>
+       <div class='marked_x'> <img  src="./assets/icon-x.svg" alt="X Icon"></div>
+       <div class="marked_o"> <img  src="./assets/icon-o.svg" alt="0 Icon"></div>
+      </div>
+     
+      <p>Remember: X goes first</p>
+
+      
+</div>
+<div class="game_button">
+  <button class="computer">NEW GAME (VS CPU)</button>
+  <button class="friendly">NEW GAME (VS PLAYER)</button>
+</div>
+
+</div>
+
+
+
+  <main>
+  <div class = 'header'>
+    <div class = 'xo_logo'>
+      <img src="./assets/logo.svg" alt="X0 Icon">
+    </div>
+
+  <div  class="whose_turn"><img src="./assets/icon-x.svg" alt="0 Icon"> TURN</div>
+
+  <div class="restart"><img src="./assets/icon-restart.svg" alt="reset"></div>
+  </div>
+
+  
+
+ <div class = 'main'> 
+  <div  >
+    <div class= 'place_holder xo1'></div>
+     <div class="place_holder xo2"></div>
+     <div class="place_holder xo3"></div>
+  </div>
+  <div>
+     <div class="place_holder xo4"></div>
+     <div class="place_holder xo5"></div>
+     <div class="place_holder xo6"></div>
+  </div>
+  <div>
+      <div class="place_holder xo7"></div>
+      <div class="place_holder xo8"></div>
+      <div class="place_holder xo9"></div>
+  </div>
+ </div>
+
+
+ <section class="scores">
+   <div class="score_x">
+     <span id="x_score_label">X (P<span class="player_1">1</span>)</span>
+     <h3 class="XorOscored1 ">0</h3>
+   </div>
+   <div class="ties">
+     <span>Ties</span>
+     <h3 id="tie_score">0</h3>
+   </div>
+   <div class="score_o">
+     <span id="o_score_label">O (P<span class="player_2">2</span>)</span>
+     <h3 class="XorOscored0">0</h3>
+   </div>
+ </section>
+
+</main>
+
+
+<div class="cover ">
+<div class="restart_pop">
+    <div>  <h1>RESTART GAME?</h1></div>
+  <div>
+    <button class="no_quit">NO, CANCEL</button>
+    <button class=" yes_rest">YES, RESTART</button>
+  </div>
+</div>
+</div>
+
+
+<div class="who_wins">
+<div id="who_won">
+  <div><h2>PLAYER 1 WINS!</h2></div>
+  <div>  <h1><img src="./assets/icon-x.svg" alt="XO icon"> TAKES THE ROUND</h1></div>
+</div>
+  <button class="quit">QUIT</button>
+  <button class="next_round">NEXT ROUND</button>
+</div>
+
+</body>
+
+</html>
+
+
