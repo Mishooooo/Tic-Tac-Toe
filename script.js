@@ -230,6 +230,9 @@ const win = (playerArray, color) => {
         return false;
     };
 
+let winX = win(placeHolderArrX, '#31C3BD');
+
+let winO = winX ? false : win(placeHolderArrO, '#F2B137');
 
 
 let oneOrTwo; 
@@ -240,19 +243,16 @@ if(vsPlayer) {
    oneOrTwo = activePlayer === 1 ? 'PLAYER 1 WINS!' : 'PLAYER 2 WINS!';
 } 
 else if(vsComputer ){
-     if(win(placeHolderArrO))  {
+     if(winO)  {
      oneOrTwo = player1or2 === 2 ? 'YOU WON!' : 'OH NO, YOU LOST...';
      notPushInArr(placeHolderArrX)
-   } else if(win(placeHolderArrX))  {
+   } else if(winX)  {
      oneOrTwo = player1or2 === 1 ? 'YOU WON!' : 'OH NO, YOU LOST...';
      notPushInArr(placeHolderArrO)
    }
 };
 
 
-
-let winX = win(placeHolderArrX, '#31C3BD');
-let winO = winX ? win(placeHolderArrO, '#1F3641') : win(placeHolderArrO, '#F2B137');
 
 
 
@@ -418,6 +418,22 @@ document.querySelector('.no_quit').addEventListener('click', () => {
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
