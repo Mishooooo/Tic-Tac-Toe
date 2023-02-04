@@ -3,7 +3,7 @@
 ## Author - Misho Sisvadze
 Welcome! 👋
 
-##cThe challenge
+## The challenge
 Your challenge is to build out this Tic Tac Toe game 
 Computer randomly makes it moves
 
