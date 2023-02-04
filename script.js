@@ -230,7 +230,7 @@ const win = (playerArray, color) => {
         return false;
     };
 
-let winX = winO ? false : win(placeHolderArrX, '#31C3BD');
+let winX = win(placeHolderArrX, '#31C3BD');
 
 let winO = winX ? false : win(placeHolderArrO, '#F2B137');
 
